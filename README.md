@@ -1,4 +1,4 @@
-# Dash-Fitness-Tracking-Visualization
+# Plotly-Dash-Fitness-Tracking-Visualization
 # http://health-grapher.herokuapp.com/
 
 <img src="https://i.imgur.com/Pie59UR.png" alt="Preview"/>
