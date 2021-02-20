@@ -3,7 +3,7 @@ from datetime import datetime
 
 def collectHeartRateInformation():
 	masterDict = {} ; dateOptions = []
-	src = 'KamranChoudhry/user-site-export/HR/'
+	src = 'data/user-site-export/HR/'
 	for file in os.listdir(src):
 		dateArr = [] ; bpmArr = []
 		date = file[11:21]
@@ -19,7 +19,7 @@ def collectHeartRateInformation():
 
 def collectCaloricInformation():
 	masterDict = {}
-	src = 'KamranChoudhry/user-site-export/CALORIES/'
+	src = 'data/user-site-export/CALORIES/'
 	for file in os.listdir(src):
 		with open(src + file) as jsonFile:
 			data = json.load(jsonFile)
@@ -43,7 +43,7 @@ def collectCaloricInformation():
 
 def collectDistanceInformation():
 	masterDict = {}
-	src = 'KamranChoudhry/user-site-export/DISTANCE/'
+	src = 'data/user-site-export/DISTANCE/'
 	for file in os.listdir(src):
 		with open(src + file) as jsonFile:
 			data = json.load(jsonFile)

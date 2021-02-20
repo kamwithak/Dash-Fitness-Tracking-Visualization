@@ -1,12 +1,12 @@
 import os, json
 def getHeartRate():
 	mapping = {}
-	heartRateFiles = [i for i in os.listdir('KamranChoudhry/user-site-export/HR/') if i.endswith("json")]
+	heartRateFiles = [i for i in os.listdir('data/user-site-export/HR/') if i.endswith("json")]
 	for file in heartRateFiles:
 		dateArr = [] ; bpmArr = []
 		fileName = str(file)
 		date = fileName[11:-5]
-		pathToFile = 'KamranChoudhry/user-site-export/HR/' + fileName
+		pathToFile = 'data/user-site-export/HR/' + fileName
 		with open(pathToFile) as jsonFile:
 			data = json.load(jsonFile)
 			for entry in data:
